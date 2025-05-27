@@ -1,8 +1,22 @@
-const ClickButton = ({ title, onClick }) => {
+import { useNavigate } from 'react-router-dom';
+
+const ClickButton = ({ title, onClick, className }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    if (title === "GYMMATE") {
+      navigate('/');
+    } else if (title === 'Sign up') {
+      navigate('/signup');
+    } else {
+      onClick?.();
+    }
+  };
+
   return (
     <button 
-      onClick={onClick}
-      className="w-10 h-10 cursor-pointer text-gray-800 whitespace-nowrap hover:text-sky-500">
+      onClick={handleClick}
+      className={className}>
       <span>{title}</span>
     </button>
   );
