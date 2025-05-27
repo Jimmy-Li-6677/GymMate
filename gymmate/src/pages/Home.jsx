@@ -2,7 +2,6 @@ import logo from '../assets/gymmate-logo.png';
 import FM from '../assets/FrightMleft.png';
 import SearchBar from '../components/SearchBar';
 import ClickButton from '../components/ClickButton';
-import Card from '../components/Card';
 
 
 
@@ -49,11 +48,11 @@ const Home = () => {
 
         {/* Bottom section */}
         <div className="flex flex-col items-center space-y-4">
-          <Card title="Diet Plan" onClick={() => console.log("Diet Plan")}
+          <ClickButton title="Diet Plan" onClick={() => console.log("Diet Plan")}
             className={"w-[50vw] h-[70px] bg-white text-center flex items-center justify-center font-mono text-xl rounded-l-full rounded-r-full whitespace-nowrap overflow-hidden hover:bg-gray-100 transition cursor-pointer border-2 border-black shadow-lg hover:shadow-xl"}/>
-          <Card title="Workout Plan" onClick={() => console.log("Workout Plan")}
+          <ClickButton title="Workout Plan" onClick={() => console.log("Workout Plan")}
             className={"w-[50vw] h-[70px] bg-white text-center flex items-center justify-center font-mono text-xl rounded-l-full rounded-r-full whitespace-nowrap overflow-hidden hover:bg-gray-100  transition cursor-pointer border-2 border-black shadow-lg hover:shadow-xl"}/>
-          <Card title="Nutrition" onClick={() => console.log(" Nutrition")}
+          <ClickButton title="Nutrition" onClick={() => console.log(" Nutrition")}
             className={"w-[50vw] h-[70px] bg-white text-center flex items-center justify-center font-mono text-xl rounded-l-full rounded-r-full whitespace-nowrap overflow-hidden hover:bg-gray-100 transition cursor-pointer border-2 border-black shadow-lg hover:shadow-xl"}/>
         </div>
       </div>
