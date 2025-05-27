@@ -8,6 +8,12 @@ const ClickButton = ({ title, onClick, className }) => {
       navigate('/');
     } else if (title === 'Sign up') {
       navigate('/signup');
+    } else if (title === 'Diet Plan') {
+      navigate('/dietplan');
+    } else if (title === 'Workout Plan') {
+      navigate('/workoutplan');
+    } else if (title === 'Nutrition') {
+      navigate('/nutrition');
     } else {
       onClick?.();
     }
