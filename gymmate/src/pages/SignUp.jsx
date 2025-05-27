@@ -1,8 +1,5 @@
 import logo from '../assets/gymmate-logo.png';
-import FM from '../assets/FrightMleft.png';
-import SearchBar from '../components/SearchBar';
 import ClickButton from '../components/ClickButton';
-import Card from '../components/Card';
 
 const SignUp = () => {
     return (
