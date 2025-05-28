@@ -2,7 +2,9 @@ import logo from '../assets/gymmate-logo.png';
 import FM from '../assets/FrightMleft.png';
 import SearchBar from '../components/SearchBar';
 import ClickButton from '../components/ClickButton';
-
+import facebook_icon from '../assets/facebook_icon.png';
+import ig_icon from '../assets/ig_icon.png';
+import linkedin_icon from '../assets/linkedln_icon.png';
 
 
 const Home = () => {
@@ -54,6 +56,19 @@ const Home = () => {
             className={"w-[50vw] h-[70px] bg-white text-center flex items-center justify-center font-mono text-xl rounded-l-full rounded-r-full whitespace-nowrap overflow-hidden hover:bg-gray-100  transition cursor-pointer border-2 border-black shadow-lg hover:shadow-xl"}/>
           <ClickButton title="Nutrition" onClick={() => console.log(" Nutrition")}
             className={"w-[50vw] h-[70px] bg-white text-center flex items-center justify-center font-mono text-xl rounded-l-full rounded-r-full whitespace-nowrap overflow-hidden hover:bg-gray-100 transition cursor-pointer border-2 border-black shadow-lg hover:shadow-xl"}/>
+        </div>
+
+      {/* Footer Section */}
+        <div className='flex justify-center items-center space-x-4 mt-30 mb-4'>
+          <a href="https://www.facebook.com/jimmy.lee.518959" target="_blank" rel="noopener noreferrer">
+            <img src={facebook_icon} alt="Facebook icon" className="w-10" />
+          </a>
+          <a href="https://www.instagram.com/jimmy.li_/" target="_blank" rel="noopener noreferrer">
+            <img src={ig_icon} alt="Instagram icon" className="w-10" />
+          </a>
+          <a href="https://www.linkedin.com/in/zhiming-li-6b518b291" target="_blank" rel="noopener noreferrer">
+            <img src={linkedin_icon} alt="LinkedIn icon" className="w-10" />
+          </a>
         </div>
       </div>
     </>
