@@ -49,14 +49,34 @@ const Home = () => {
         </div>
 
         {/* Bottom section */}
-        <div className="flex flex-col items-center space-y-4">
-          <ClickButton title="Diet Plan" onClick={() => console.log("Diet Plan")}
-            className={"w-[50vw] h-[70px] bg-white text-center flex items-center justify-center font-mono text-xl rounded-l-full rounded-r-full whitespace-nowrap overflow-hidden hover:bg-gray-100 transition cursor-pointer border-2 border-black shadow-lg hover:shadow-xl"}/>
-          <ClickButton title="Workout Plan" onClick={() => console.log("Workout Plan")}
-            className={"w-[50vw] h-[70px] bg-white text-center flex items-center justify-center font-mono text-xl rounded-l-full rounded-r-full whitespace-nowrap overflow-hidden hover:bg-gray-100  transition cursor-pointer border-2 border-black shadow-lg hover:shadow-xl"}/>
-          <ClickButton title="Nutrition" onClick={() => console.log(" Nutrition")}
-            className={"w-[50vw] h-[70px] bg-white text-center flex items-center justify-center font-mono text-xl rounded-l-full rounded-r-full whitespace-nowrap overflow-hidden hover:bg-gray-100 transition cursor-pointer border-2 border-black shadow-lg hover:shadow-xl"}/>
+        <div className="flex items-center justify-center">
+            <div className="flex flex-col items-center space-y-4">
+              <ul className="w-full">
+                <li className="p-2">
+                  <ClickButton
+                    title="Diet Plan"
+                    onClick={() => console.log("Diet Plan")}
+                    className="w-[50vw] h-[70px] bg-white text-center flex items-center justify-center font-mono text-xl rounded-full whitespace-nowrap overflow-hidden hover:bg-gray-100 transition cursor-pointer border-2 border-black shadow-lg hover:shadow-xl"
+                  />
+                </li>
+                <li className="p-2">
+                  <ClickButton
+                    title="Workout Plan"
+                    onClick={() => console.log("Workout Plan")}
+                    className="w-[50vw] h-[70px] bg-white text-center flex items-center justify-center font-mono text-xl rounded-full whitespace-nowrap overflow-hidden hover:bg-gray-100 transition cursor-pointer border-2 border-black shadow-lg hover:shadow-xl"
+                  />
+                </li>
+                <li className="p-2">
+                  <ClickButton
+                    title="Nutrition"
+                    onClick={() => console.log("Nutrition")}
+                    className="w-[50vw] h-[70px] bg-white text-center flex items-center justify-center font-mono text-xl rounded-full whitespace-nowrap overflow-hidden hover:bg-gray-100 transition cursor-pointer border-2 border-black shadow-lg hover:shadow-xl"
+                  />
+                </li>
+              </ul>
+            </div>
         </div>
+
 
       {/* Footer Section */}
         <div className='flex justify-center items-center space-x-4 mt-30 mb-4'>
